@@ -37,7 +37,7 @@ html, body{height:100%;min-height:100%}
 
 /* 헤더 */
 .wrap_skin{position:relative;min-width:884px;min-height:100%;padding-left:23%;transition:padding-left ease-in-out 0.2s}
-.wrap_skin.navi_on {padding-left:960px}
+.wrap_skin.navi_on {padding-left:290px}
 .area_head{position:fixed;left:0;top:0;width:23%;margin-top:171px;min-width:320px;z-index:1000}
 .article_skin{width:800px;min-height:858px;margin:0 auto;padding:96px 42px 100px}
 #tt-body-index .article_skin { padding-top:70px }
@@ -80,7 +80,7 @@ html, body{height:100%;min-height:100%}
 .navi_on .area_navi{display:block}
 .navi_on .area_head .area_profile{display:none}
 .navi_on .cont_sub{background:url(images/bg_side.png) repeat-y 0 0;opacity:1.0;filter:alpha(Opacity=100)}
-.navi_on .wrap_sub{width:960px}
+.navi_on .wrap_sub{width:320px}
 .navi_on .area_search{left:856px;top:-151px}
 .navi_on.search_on .area_search {width:216px;left:670px;margin-left:0}
 .navi_on .btn_search { margin-top:11px}
