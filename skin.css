@@ -1,4 +1,30 @@
 @charset "UTF-8";
+
+@font-face {    /* 사이드 */
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {    /* h3 */
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
 fieldset,img{border:0 none}
@@ -9,7 +35,7 @@ input,select,textarea,button {vertical-align:middle;outline:none}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body {background:#fff;-webkit-text-size-adjust:none}
-body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Spoqa Han Sans', sans-serif;color:#666}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family: 'BMJUA', sans-serif;color:#666}
 a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:underline}
 a:active {background-color:transparent}z
@@ -17,6 +43,9 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button,textarea{-webkit-appearance:none}
+
+
+
 
 /* global */
 #dkIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
@@ -162,7 +191,7 @@ html, body{height:100%;min-height:100%}
 .area_foot .emph_t{color:#6bacce}
 
 /* 뷰 상단 */
-.area_title{margin:0 0 30px;padding-bottom:15px;border-bottom:1px solid #efefef}
+.area_title{margin:0 0 30px;padding-bottom:15px;border-bottom:1px solid #efefef; font-family: 'BMJUA'}
 .area_title .tit_category a {font-weight:700;font-size:16px;color:#6bacce}
 .area_title .tit_post{padding:5px 0 10px;font-weight:normal;font-size:34px;line-height:43px;color:#222}
 .area_title .info_post,
@@ -368,12 +397,24 @@ only screen and (max-width:738px){
 
 	.list_control {display:none}
 	.article_skin {width:100%;min-height:100%;padding:45px 0 0 0}
+
+    /* 본문 제목과 카테고리 폰트 같이 변경 */
 	.area_title {padding:0 15px 13px;margin-bottom:18px}
+
+    /* 본문 제목만 폰트 변경 */
 	.area_title .tit_category a {font-weight:normal;font-size:14px}
+
+    /* 본문 제목 위 카테고리만 폰트 변경 */
 	.area_title .tit_post {padding:2px 0 3px;font-size:24px;line-height:30px}
+
+    /* 본문 제목 아래 닉네임, 날짜, 수정, 비공개, 삭제 폰트 변경 */
 	.area_title .info_post {display:block;margin-top:5px;font-size:12px;font-family:applesdgothicneo-ultralight}
+
+    /* 닉네임과 날짜 사이 간격 */
 	.area_title .info_post .txt_bar { margin:0 6px 0 4px}
-	.area_view { margin:0 15px;font-size:15px;line-height:24px;color:#333;font-family:applesdgothicneo-ultralight }
+
+    /* 본문 폰트 변경 */
+	.area_view { margin:0 15px;font-size:15px;line-height:24px;color:#333; font-family: 'BMJUA'; }
 
 	.area_view p { line-height:23px }
 	.area_view h1,
